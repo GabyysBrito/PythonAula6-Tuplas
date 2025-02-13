@@ -12,32 +12,40 @@
 
 ## Estrutura de uma Tupla
 
+```python
 # Exemplo
-- cores = ("vermelho", "azul", "verde")
-- print(cores)
+ cores = ("vermelho", "azul", "verde")
+ print(cores)
+```
 
 ## 🔄 Modificando uma Tupla (Convertendo para Lista e de Volta para Tupla)
 
-### Convertendo tupla para lista
+```python
+# Convertendo tupla para lista
+
 cores_lista = list(cores)
 cores_lista.append("amarelo")
 cores = tuple(cores_lista)
 print(cores)  # ('vermelho', 'azul', 'verde', 'amarelo')
 
+```
+
 ## 🚀 Exercício Prático - Cadastro de Cliente
 
-### Criando uma tupla vazia para armazenar informações do cliente
+```python
+# Criando uma tupla vazia para armazenar informações do cliente
 cliente = ()
 
-### Convertendo para lista para adicionar informações
+# Convertendo para lista para adicionar informações
 cliente_lista = list(cliente)
-cliente_lista.append("Nome: João")
+cliente_lista.append("Nome: Gabrielle")
 cliente_lista.append("Idade: 30")
-cliente_lista.append("Cidade: São Paulo")
+cliente_lista.append("Cidade: Pernambuco")
 
-### Convertendo de volta para tupla
+# Convertendo de volta para tupla
 cliente = tuple(cliente_lista)
 print(cliente)
+```
 
 ## 🔹 Mini Introdução a Funções em Python
 
@@ -45,14 +53,15 @@ As **funções** em Python permitem reutilizar código e organizá-lo melhor. S�
 
 ## 📌 Exemplo de Função com soma()
 
-### Definindo uma função que realiza a soma de dois números
+```python
+# Definindo uma função que realiza a soma de dois números
 def soma(a, b):
     return a + b
 
 ### Chamando a função e imprimindo o resultado
 resultado = soma(5, 3)
 print(f"A soma é {resultado}")
-
+```
 
 
 
